@@ -1,6 +1,6 @@
 services:
   mppi_noetic:
-    image: noetic_image # name of the image that will be created
+    image: "noetic_image" # name of the image that will be created
     stdin_open: true # keep the stdin open
     privileged: true 
     environment:
@@ -19,6 +19,5 @@ services:
     network_mode: host
     ipc: host
     # share the X11 socket with the host to display the GUI
-    runtime: nvidia # use the nvidia runtime to access the GPU
     container_name: noetic_mppi_container # name of the container that will be created
     restart: no # do not restart the container automatically
