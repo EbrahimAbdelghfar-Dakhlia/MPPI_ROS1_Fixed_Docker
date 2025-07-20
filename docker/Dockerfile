@@ -22,7 +22,7 @@ RUN /bin/bash -c "source /opt/ros/noetic/setup.bash" \
     && apt-get install -y ros-noetic-jsk-* \
     && apt-get install -y ros-noetic-teb-* \
     && apt-get install -y ros-noetic-amcl* \
-    && apt-get install -y ros-noetic-move-* \ 
+    && apt-get install -y ros-noetic-move-*
 # set entrypoint including process of sourcing ros environment
 COPY launch /home/launch
 COPY config /home/config
